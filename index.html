@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Position</title>
+        <style>
+            #p{
+                width: 600px;
+                height: 600px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+
+                animation-name: abc;
+               animation-duration: 1.5s;
+               animation-timing-function: ease-in;
+               animation-iteration-count: infinite;
+
+            }
+            @keyframes abc{
+                0%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(360deg);
+                }
+            }
+                
+                
+            
+            .common{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                border: 2px solid rgb(14, 1, 1);
+            }
+            .blue{
+                background: rgb(233, 47, 14);
+                border-bottom-left-radius: 300px;
+                border-top-right-radius: 300px;
+                bottom:0px;
+                right: 0px;
+            }
+            .green{
+                background: rgb(236, 17, 207);
+                border-top-left-radius: 300px;
+                border-bottom-right-radius: 300px;
+                top:0px;
+                right: 0px;
+            }
+            .yellow{
+                background: rgb(0, 255, 85);
+                bottom: 0px;
+                left: 0px;
+                border-top-left-radius: 300px;
+                border-bottom-right-radius: 300px;
+            }
+            .levender{
+                background: rgb(68, 4, 172);
+                top:0px;
+                left: 0px;
+                border-bottom-left-radius: 300px;
+                border-top-right-radius: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="p">
+            <div class="common c1 blue"></div>
+            <div class="common c2 green"></div>
+            <div class="common c3 yellow"></div>
+            <div class="common c4 levender"></div>
+        </div>
+    </body>
+</html>
